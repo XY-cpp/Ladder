@@ -147,36 +147,36 @@ proxy-groups:
 
 rule-providers:
   # 白名单
-  White: {<<: *c, path: ./rule-providers/White.list, url:  https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/White.list}
+  White: {<<: *c, url:  https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/White.list}
 
   # 广告拦截
-  AD: {<<: *c, path: ./rule-providers/AD.list, url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Reject.list}
+  AD: {<<: *c, url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Reject.list}
 
   # 苹果服务
-  Apple: {<<: *c, path: ./rule-providers/Apple.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Apple.list}
+  Apple: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Apple.list}
 
   # 谷歌服务
-  YouTube: {<<: *c, path: ./rule-providers/YouTube.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/YouTube.list}
-  Google: {<<: *c, path: ./rule-providers/Google.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Google.list}
+  YouTube: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/YouTube.list}
+  Google: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Google.list}
 
   # 电报消息
-  Telegram: {<<: *c, path: ./rule-providers/Telegram.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Telegram.list}
+  Telegram: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Telegram.list}
 
   # 推特消息
-  Twitter: {<<: *c, path: ./rule-providers/Twitter.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Twitter.list}
+  Twitter: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Twitter.list}
 
   # 游戏平台
-  Steam: {<<: *c, path: ./rule-providers/Steam.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Steam.list}
+  Steam: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Steam.list}
 
   # AI平台
-  AI: {<<: *c, path: ./rule-providers/AI.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/AI.list}
+  AI: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/AI.list}
 
   # 国际媒体
-  Spotify: {<<: *c, path: ./rule-providers/Spotify.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Spotify.list}
-  Netflix: {<<: *c, path: ./rule-providers/Netflix.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Netflix.list}
-  Disney: {<<: *c, path: ./rule-providers/Disney.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Disney.list}
-  PrimeVideo: {<<: *c, path: ./rule-providers/PrimeVideo.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/PrimeVideo.list}
-  HBO: {<<: *c, path: ./rule-providers/HBO.list,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/HBO.list}
+  Spotify: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Spotify.list}
+  Netflix: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Netflix.list}
+  Disney: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Disney.list}
+  PrimeVideo: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/PrimeVideo.list}
+  HBO: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/HBO.list}
 
 rules:
   - RULE-SET,White,DIRECT
