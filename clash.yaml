@@ -127,23 +127,23 @@ proxy-groups:
 
   #节点地区分组
 
-  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|HK|Hong|Hong Kong", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|HK|Hong|Hong Kong", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
 
-  - {name: 马来西亚节点, <<: *url-test, filter: "(?i)🇲🇾|马来西亚|MYS|Malaysia", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png}
+  - {name: 马来西亚节点, <<: *url-test, filter: "(?i)🇲🇾|马来西亚|MYS|Malaysia", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png}
 
-  - {name: 英国节点, <<: *url-test, filter: "(?i)🇬🇧|英国|UK|United Kingdom", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png}
+  - {name: 英国节点, <<: *url-test, filter: "(?i)🇬🇧|英国|UK|United Kingdom", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png}
 
-  - {name: 土耳其节点, <<: *url-test, filter: "(?i)🇹🇷|土耳其|TR|Turkey", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Turkey.png}
+  - {name: 土耳其节点, <<: *url-test, filter: "(?i)🇹🇷|土耳其|TR|Turkey", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Turkey.png}
 
-  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|US|United States", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
+  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|US|United States", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
 
-  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|SG|Singapore", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
+  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|SG|Singapore", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
 
-  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|JP|Japan", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|JP|Japan", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
 
-  - {name: 阿根廷节点, <<: *url-test, filter: "(?i)🇦🇷|阿根廷|AR|Argentina", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Argentina.png}
+  - {name: 阿根廷节点, <<: *url-test, filter: "(?i)🇦🇷|阿根廷|AR|Argentina", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Argentina.png}
 
-  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|TW|Tai|Taiwan", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png}
+  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|TW|Tai|Taiwan", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png}
 
 rule-providers:
   # 白名单
