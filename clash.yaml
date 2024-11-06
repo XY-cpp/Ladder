@@ -91,7 +91,7 @@ d: &d {type: http, behavior: domain, format: text, interval: 86400}
 i: &i {type: http, behavior: ipcidr, format: text, interval: 86400}
 
 proxy-providers:
-  sample: {}
+  sample: {type: http, url: "https//example.com/config.yaml"}
 
 proxy-groups:
 
