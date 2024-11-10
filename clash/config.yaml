@@ -97,7 +97,7 @@ proxy-groups:
 
   #分流分组
 
-  - {name: 节点选择, type: select, proxies: [香港节点, 马来西亚节点, 英国节点, 土耳其节点, 美国节点, 狮城节点, 日本节点, 阿根廷节点, 台湾节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png}
+  - {name: 节点选择, type: select, proxies: [全部节点, 香港节点, 马来西亚节点, 英国节点, 土耳其节点, 美国节点, 狮城节点, 日本节点, 阿根廷节点, 台湾节点, DIRECT], icon:  https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png}
 
   - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
 
@@ -123,6 +123,8 @@ proxy-groups:
 
   #节点地区分组
 
+  - {name: 全部节点, <<: *url-test, include-all: true, hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rainbow.png}
+
   - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|HK|Hong|Hong Kong", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
 
   - {name: 马来西亚节点, <<: *url-test, filter: "(?i)🇲🇾|马来西亚|MYS|Malaysia", hidden: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png}
@@ -143,36 +145,36 @@ proxy-groups:
 
 rule-providers:
   # 白名单
-  White: {<<: *c, url:  https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/White.list}
+  White: {<<: *c, url:  https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/White.list}
 
   # 广告拦截
-  AD: {<<: *c, url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Reject.list}
+  AD: {<<: *c, url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Reject.list}
 
   # 苹果服务
-  Apple: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Apple.list}
+  Apple: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Apple.list}
 
   # 谷歌服务
-  YouTube: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/YouTube.list}
-  Google: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Google.list}
+  YouTube: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/YouTube.list}
+  Google: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Google.list}
 
   # 电报消息
-  Telegram: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Telegram.list}
+  Telegram: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Telegram.list}
 
   # 推特消息
-  Twitter: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Twitter.list}
+  Twitter: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Twitter.list}
 
   # 游戏平台
-  Steam: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Steam.list}
+  Steam: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Steam.list}
 
   # AI平台
-  AI: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/AI.list}
+  AI: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/AI.list}
 
   # 国际媒体
-  Spotify: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Spotify.list}
-  Netflix: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Netflix.list}
-  Disney: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/Disney.list}
-  PrimeVideo: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/PrimeVideo.list}
-  HBO: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/rules/HBO.list}
+  Spotify: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Spotify.list}
+  Netflix: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Netflix.list}
+  Disney: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/Disney.list}
+  PrimeVideo: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/PrimeVideo.list}
+  HBO: {<<: *c,  url: https://raw.githubusercontent.com/XY-cpp/Ladder/main/clash/rules/HBO.list}
 
 rules:
   - RULE-SET,White,DIRECT
